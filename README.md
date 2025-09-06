@@ -16,3 +16,14 @@ Là nhiều cây Quyết định, thay vì 1 cây quyết định thì sẽ sử
 
 Ví dụ : dữ liệu có 5 trường, thì sẽ lấy k trường ngẫu nhiêu, sau đó sử dụng các thuật toán tính Gini, IG để chọn nút gốc, sau đó tương tự, lại chọn (5- k) trường còn lại để điền nốt vào cây
 Sau đó đưa tất cả output của từng cây để vote xem là kết quả nào
+
+
+II. AdaBoost
+
+AdaBooost có phương pháp học hoàn toàn khác: học từ sai lầm. Thay vì học các mô hình độc lập, AdaBoost xây dựng một chuỗi các weeklearner, mỗi learner được thiết kế để sửa chữa những sai lầm của các learner trước đó
+
+<img width="723" height="305" alt="image" src="https://github.com/user-attachments/assets/c5e3977a-9b6d-422f-879a-4d98762d83b9" />
+
+1. Ý tưởng: Mỗi vòng lặp, AdaBoost tập trung nhiều hơn vào những mẫu dữ liệu mà mô hình trước đó phân loại sai. Sau nhiều vòng, các mô hình yếu được gán trọng số và cuối cùng kết hợp thành một mô hình mạnh
+
+
