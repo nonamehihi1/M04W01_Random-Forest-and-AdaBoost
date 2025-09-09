@@ -44,6 +44,7 @@ Sau đó tính Amount of Say cho mỗi thuộc tính:
 Sau đó chúng ta sẽ cải thiện bằng cách tạo thêm dataset mới, sao cho sẽ duplicate các trường hợp sai nhiều hơn
 
 Solution 1: label (-1, 1): Tăng Sample weight cho các Incorrectly classified và Giảm cho các Correctly classified
+
 Solution 2: Label (0, 1): Tăng Sample weight cho các Incorrectly classified và giữ nguyên Correctly 
 
 Công thức của Sample Weight(mới) = Sample Weight(cũ) * e^(Amount of say * y * y_pred)
